@@ -1,0 +1,11 @@
+int max(int *iptr[], int n)
+{
+	int max = -2147483647;
+	for(int i = 0 ; i < n ; i++){
+		if(*iptr[i] >= max){
+			max = *iptr[i];
+		}
+	}
+	return max;
+} 
+
